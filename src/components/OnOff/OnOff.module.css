@@ -1,0 +1,44 @@
+.red {
+    width: 70px;
+    height: 40px;
+    background-color: red;
+    outline: 1px solid black;
+    margin-left: 30px;
+}
+.green {
+    width: 70px;
+    height: 40px;
+    background-color: green;
+    outline: 1px solid black;
+    margin-left: 30px;
+}
+
+.diod_red {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    outline: 1px solid black;
+    margin-left: 30px;
+}
+
+.diod_green {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: green;
+    outline: 1px solid black;
+    margin-left: 30px;
+}
+.button {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.empty {
+    width: 70px;
+    height: 40px;
+    outline: 1px solid black;
+    margin-left: 30px;
+}

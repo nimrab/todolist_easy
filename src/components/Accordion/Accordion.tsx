@@ -6,11 +6,12 @@ type AccordionPropsType = {
     collapsed: boolean
 }
 
-function Accordion(props: AccordionPropsType) {
+export const Accordion = (props: AccordionPropsType) => {
 
     return (
         <>
             <AccordionTitle title={props.title}/>
+            <button>Toggle list</button>
             {!props.collapsed && <AccordionBody/>}
             {/*если collapsed false, то смотрм <Ac.Bo.>. Он True. Значение не переключаем, возвращаем false. {false} не отрисуется*/}
             {/*если collapsed true, то смотрм <Ac.Bo.>. Он True. Вернем значение, на котором остановились, те <Ac.Bo.>. Он отобразится */}
