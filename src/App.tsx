@@ -12,7 +12,7 @@ function App() {
             <Accordion title={"User Menu"} collapsed={false}/>
             <Rating value={2}/>
 
-            <OnOff switch={true}/>
+            <OnOff/>
 
 
         </>

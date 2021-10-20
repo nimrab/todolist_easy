@@ -1,29 +1,28 @@
-import React from "react";
+import React, {useState} from "react";
 import css from './OnOff.module.css';
 
-export type OnOffPropsType = {
-    switch: boolean
-}
+// export type OnOffPropsType = {
+//     switch: boolean
+// }
 
-export const OnOff: React.FC<OnOffPropsType> = (props) => {
+export const OnOff = () => {
 
-    if (props.switch) {
-        return (
-            <div className={css.button}>
-                <div className={css.green}>ON</div>
-                <div className={css.empty}>OFF</div>
-                <div className={css.diod_green}></div>
-            </div>
 
-        )
 
-    } else {
-        return (
-            <div className={css.button}>
-                <div className={css.empty}>ON</div>
-                <div className={css.red}>OFF</div>
-                <div className={css.diod_red}></div>
-            </div>
-        )
-    }
+    let [switchButton, setSwitch] = useState(true);
+
+    const onStyle = {backgroundColor: switchButton ? "green" : "white"}
+    const offStyle = {backgroundColor: switchButton ? "white" : "red"}
+    const diodStyle = {backgroundColor: switchButton ? "green" : "red"}
+
+
+    return (
+        <div className={css.button}>
+            <div className={css.block} style={onStyle} onClick={() => {setSwitch(true)}}>ON</div>
+            <div className={css.block} style={offStyle} onClick={() => {setSwitch(false)}}>OFF</div>
+            <div className={css.diod} style={diodStyle}></div>
+        </div>
+
+    )
+
 }

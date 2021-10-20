@@ -1,44 +1,27 @@
-.red {
-    width: 70px;
-    height: 40px;
-    background-color: red;
-    outline: 1px solid black;
-    margin-left: 30px;
-}
-.green {
-    width: 70px;
-    height: 40px;
-    background-color: green;
-    outline: 1px solid black;
-    margin-left: 30px;
-}
-
-.diod_red {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: red;
-    outline: 1px solid black;
-    margin-left: 30px;
-}
-
-.diod_green {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: green;
-    outline: 1px solid black;
-    margin-left: 30px;
-}
 .button {
     display: flex;
-    margin-top: 100px;
-    margin-left: 50px;
 }
 
-.empty {
+.block {
     width: 70px;
     height: 40px;
     outline: 1px solid black;
-    margin-left: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block:active {
+    box-shadow:inset 2px 2px 2px grey;
+}
+
+
+.diod {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    outline: 1px solid black;
+    margin: 30px;
+    background-color: green;
 }
