@@ -23,7 +23,7 @@ type StarPropsType = {
     value: boolean
 }
 
-function Star(props: StarPropsType) {
+export function Star(props: StarPropsType) {
 
     if (props.value) {
         return (

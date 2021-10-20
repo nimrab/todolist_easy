@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 
 type AccordionPropsType = {
@@ -8,11 +8,14 @@ type AccordionPropsType = {
 
 export const Accordion = (props: AccordionPropsType) => {
 
+
     return (
         <>
             <AccordionTitle title={props.title}/>
-            <button>Toggle list</button>
-            {!props.collapsed && <AccordionBody/>}
+
+            {props.collapsed && <AccordionBody/>}
+
+            {/*{!props.collapsed && <AccordionBody/>} это если boolean приходит из родителя*/}
             {/*если collapsed false, то смотрм <Ac.Bo.>. Он True. Значение не переключаем, возвращаем false. {false} не отрисуется*/}
             {/*если collapsed true, то смотрм <Ac.Bo.>. Он True. Вернем значение, на котором остановились, те <Ac.Bo.>. Он отобразится */}
 
@@ -39,18 +42,18 @@ export const Accordion = (props: AccordionPropsType) => {
 // // }
 
 
-type AccordionTitlePropsType = {
+export type AccordionTitlePropsType = {
     title: string
 }
 
-function AccordionTitle(props: AccordionTitlePropsType) {
+export function AccordionTitle(props: AccordionTitlePropsType) {
     return (
         <h3>{props.title}</h3>
     )
 }
 
 
-function AccordionBody() {
+export function AccordionBody() {
     return (
         <ul>
             <li className={'list1'}>1</li>
