@@ -1,30 +1,32 @@
 import React, {useState} from "react";
-import {Star} from "./Rating";
-
+import {Star} from "./Star";
 
 
 export const UncontrolledRating = () => {
 
     let [value, setValue] = useState(0)
 
+    let stars = [1, 2, 3, 4, 5];
+
+    const callbackHandler = (id:string) => {
+        setValue(parseInt(id))
+
+    }
 
     return (
         <div>
-            <Star value={value > 0}/>
-            <button onClick={() => {setValue(1)}}>1</button>
+            {
 
-            <Star value={value > 1}/>
-            <button onClick={() => {setValue(2)}}>2</button>
 
-            <Star value={value > 2}/>
-            <button onClick={() => {setValue(3)}}>3</button>
+                stars.map((el,index) => {
 
-            <Star value={value > 3}/>
-            <button onClick={() => {setValue(4)}}>4</button>
+                    return (
+                        <Star value={value > index} callback={callbackHandler} id={el.toString()} key={el}/>
+                    )
+                })
 
-            <Star value={value > 4}/>
-            <button onClick={() => {setValue(5)}}>5</button>
 
+            }
         </div>
     )
 }

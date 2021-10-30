@@ -17,9 +17,6 @@ function App() {
             <UncontrolledAccordion title={"ToggleAccordion"}/>
             <UncontrolledRating />
 
-
-
-
         </>
     )
 }
