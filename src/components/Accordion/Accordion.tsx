@@ -4,14 +4,14 @@ import React, {useState} from "react";
 type AccordionPropsType = {
     title: string,
     collapsed: boolean
+
 }
 
 export const Accordion = (props: AccordionPropsType) => {
 
-
     return (
         <>
-            <AccordionTitle title={props.title}/>
+            <AccordionTitle title={props.title} callback={() => {}}/>
 
             {props.collapsed && <AccordionBody/>}
 
@@ -44,11 +44,17 @@ export const Accordion = (props: AccordionPropsType) => {
 
 export type AccordionTitlePropsType = {
     title: string
+    callback: () => void
 }
 
 export function AccordionTitle(props: AccordionTitlePropsType) {
+
+    const callbackHandler = () => {
+        props.callback()
+    }
+
     return (
-        <h3>{props.title}</h3>
+        <h3 onClick={callbackHandler}>{props.title}</h3>
     )
 }
 

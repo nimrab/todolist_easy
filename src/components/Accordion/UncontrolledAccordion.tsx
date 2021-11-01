@@ -3,14 +3,22 @@ import {AccordionTitle, AccordionTitlePropsType} from './Accordion'
 import {AccordionBody} from './Accordion'
 
 
-export const UncontrolledAccordion:React.FC<AccordionTitlePropsType> = (props) => {
+export type UncontrolledAccordionPropsType = {
+    title: string
+}
 
-    let [toggle, setToggle] = useState(true)
+export const UncontrolledAccordion= (props:UncontrolledAccordionPropsType ) => {
+
+    let [toggle, setToggle] = useState<boolean>(true)
+
+    const changeToggle = () => {
+        setToggle(!toggle)
+    }
 
     return (
         <>
-            <AccordionTitle title={props.title}/>
-            <button onClick={()=> {setToggle(!toggle)}}>Toggle list</button>
+            <AccordionTitle title={props.title} callback={changeToggle}/>
+            {/*<button onClick={()=> {setToggle(!toggle)}}>Toggle list</button>*/}
             {toggle && <AccordionBody/>}
         </>
     )
