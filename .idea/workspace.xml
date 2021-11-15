@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9991d850-0650-4346-8d2a-b8db2f9860f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Accordion/NewControlledAccordion.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Select/SelectAutoWidth.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Accordion/Accordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Accordion/Accordion.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Accordion/UncontrolledAccordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Accordion/UncontrolledAccordion.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Accordion/NewControlledAccordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Accordion/NewControlledAccordion.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +45,11 @@
     <property name="ts.external.directory.path" value="C:\samurai\todolist_easy\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\samurai\todolist_easy\src\components" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -55,7 +61,9 @@
       <workItem from="1635527420696" duration="1509000" />
       <workItem from="1635575493855" duration="8000" />
       <workItem from="1635615868725" duration="6321000" />
-      <workItem from="1635768729942" duration="3764000" />
+      <workItem from="1635768729942" duration="5206000" />
+      <workItem from="1636912822278" duration="907000" />
+      <workItem from="1636992556252" duration="5477000" />
     </task>
     <servers />
   </component>
