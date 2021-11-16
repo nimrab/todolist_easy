@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {MouseEventHandler, useState} from "react";
 import './App.css';
 import {Accordion} from "./components/Accordion/Accordion";
 import {Rating} from "./components/Rating/Rating";
@@ -8,6 +8,7 @@ import {UncontrolledRating} from "./components/Rating/UncontrolledRating";
 import {NewControlledAccordion} from "./components/Accordion/NewControlledAccordion";
 import {SelectAutoWidth} from "./components/Select/SelectAutoWidth";
 import {SelectChangeEvent} from "@mui/material/Select";
+import {CustomSelect} from "./components/Select/CustomSelect";
 
 
 export type selectStateType = {
@@ -15,6 +16,18 @@ export type selectStateType = {
     values: Array<string>
     chosenValue: string
 }
+
+export type selectValueType = {
+    id:number
+    value: string
+}
+
+export type customSelectStateType = {
+    initialTitle: string
+    values: Array<selectValueType>
+    chosenValue: string
+}
+
 
 
 function App() {
@@ -25,20 +38,41 @@ function App() {
         setCollapsed(!collapsed)
     }
 
-
-    const selectDefaultState: selectStateType = {
-        initialTitle: 'ChooseMe',
-        values: ['option 1', 'option 2', 'option 3', 'option 4'],
-        chosenValue: ''
-    }
-
-
-    const [selectState, setSelectState] = useState<selectStateType>(selectDefaultState)
-
-
     const handleSelectChange = (event: SelectChangeEvent) => {
         const newState = {...selectDefaultState, chosenValue: event.target.value}
         setSelectState(newState)
+    }
+    const selectDefaultState: selectStateType = {
+        initialTitle: 'ChooseMe',
+        values: ['Moscow', 'Kazan', 'Ufa', 'Rostov'],
+        chosenValue: ''
+    }
+    const [selectState, setSelectState] = useState<selectStateType>(selectDefaultState)
+
+
+
+
+
+
+
+    const customSelectState: customSelectStateType = {
+        initialTitle: 'ChooseMe',
+        values:[
+            {id: 1, value: 'Moscow'},
+            {id: 2, value: 'Ufa'},
+            {id: 3, value: 'Kazan'},
+            {id: 4, value: 'Rostov'},
+        ],
+        chosenValue: ''
+    }
+    const [customSelect, setCustomSelect] = useState<customSelectStateType>(customSelectState)
+
+
+
+    const handleCustomSelectChange = (value:string) => {
+        debugger
+        const newState = {...customSelectState, chosenValue: 1 }
+        //setSelectState(newState)
     }
 
 
@@ -58,6 +92,12 @@ function App() {
                 value={selectState.chosenValue}
                 onChangeCallback={handleSelectChange}
                 values={selectDefaultState.values}
+
+            />
+
+            <CustomSelect
+                values={customSelectState.values}
+                selectValue={handleCustomSelectChange}
 
             />
 

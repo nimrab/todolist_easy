@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9991d850-0650-4346-8d2a-b8db2f9860f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Select/SelectAutoWidth.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Select/CustomSelect.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Accordion/NewControlledAccordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Accordion/NewControlledAccordion.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../todolist47" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -63,7 +60,8 @@
       <workItem from="1635615868725" duration="6321000" />
       <workItem from="1635768729942" duration="5206000" />
       <workItem from="1636912822278" duration="907000" />
-      <workItem from="1636992556252" duration="5477000" />
+      <workItem from="1636992556252" duration="6320000" />
+      <workItem from="1637074747648" duration="6208000" />
     </task>
     <servers />
   </component>
