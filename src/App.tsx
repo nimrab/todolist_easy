@@ -23,7 +23,6 @@ export type selectValueType = {
 }
 
 export type customSelectStateType = {
-    initialTitle: string
     values: Array<selectValueType>
     chosenValue: string
 }
@@ -56,23 +55,21 @@ function App() {
 
 
     const customSelectState: customSelectStateType = {
-        initialTitle: 'ChooseMe',
         values:[
             {id: 1, value: 'Moscow'},
             {id: 2, value: 'Ufa'},
             {id: 3, value: 'Kazan'},
             {id: 4, value: 'Rostov'},
         ],
-        chosenValue: ''
+        chosenValue: 'Choose your city'
     }
     const [customSelect, setCustomSelect] = useState<customSelectStateType>(customSelectState)
 
 
 
     const handleCustomSelectChange = (value:string) => {
-        debugger
-        const newState = {...customSelectState, chosenValue: 1 }
-        //setSelectState(newState)
+        const newState = {...customSelectState, chosenValue: value }
+        setCustomSelect(newState)
     }
 
 
@@ -96,8 +93,9 @@ function App() {
             />
 
             <CustomSelect
-                values={customSelectState.values}
+                values={customSelect.values}
                 selectValue={handleCustomSelectChange}
+                chosenValue={customSelect.chosenValue}
 
             />
 
