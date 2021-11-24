@@ -7,7 +7,10 @@ type RatingPropsType = {
 }
 
 
+
+
 export function Rating(props: RatingPropsType) {
+
     return (
         <div>
             <Star value={props.value > 0} callback={()=>{}} id="1"/>

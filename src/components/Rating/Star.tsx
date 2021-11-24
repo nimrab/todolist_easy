@@ -16,7 +16,7 @@ export const Star = (props: StarPropsType) => {
 
     const boldStyle = {fontWeight: props.value ? 700 : 300}
 
-
+    console.log('Star rendered from Star')
     return (
         <>
             <span id={props.id} onClick={onClickEventHandler} style={boldStyle}> STAR </span>

@@ -1,4 +1,4 @@
-import React, {MouseEventHandler, useState} from "react";
+import React, {useState} from "react";
 import './App.css';
 import {Accordion} from "./components/Accordion/Accordion";
 import {Rating} from "./components/Rating/Rating";
@@ -18,7 +18,7 @@ export type selectStateType = {
 }
 
 export type selectValueType = {
-    id:number
+    id: number
     value: string
 }
 
@@ -28,11 +28,10 @@ export type customSelectStateType = {
 }
 
 
-
 function App() {
 
-
     let [collapsed, setCollapsed] = useState<boolean>(true)
+
     const accordionCollapseChange = () => {
         setCollapsed(!collapsed)
     }
@@ -49,13 +48,8 @@ function App() {
     const [selectState, setSelectState] = useState<selectStateType>(selectDefaultState)
 
 
-
-
-
-
-
     const customSelectState: customSelectStateType = {
-        values:[
+        values: [
             {id: 1, value: 'Moscow'},
             {id: 2, value: 'Ufa'},
             {id: 3, value: 'Kazan'},
@@ -65,21 +59,26 @@ function App() {
     }
     const [customSelect, setCustomSelect] = useState<customSelectStateType>(customSelectState)
 
-
-
-    const handleCustomSelectChange = (value:string) => {
-        const newState = {...customSelectState, chosenValue: value }
+    const handleCustomSelectChange = (value: string) => {
+        const newState = {...customSelectState, chosenValue: value}
         setCustomSelect(newState)
     }
+
+
 
 
     return (
         <>
             <Accordion title={"My Menu"} collapsed={true}/>
+
             <Accordion title={"User Menu"} collapsed={true}/>
+
             <Rating value={2}/>
+
             <OnOff/>
-            <UncontrolledAccordion title={"ToggleAccordion"}/>
+
+            <UncontrolledAccordion title={"Toggle Accordion"}/>
+
             <UncontrolledRating/>
 
             <NewControlledAccordion title={"Controlled menu"} collapsed={collapsed} callback={accordionCollapseChange}/>
@@ -89,7 +88,6 @@ function App() {
                 value={selectState.chosenValue}
                 onChangeCallback={handleSelectChange}
                 values={selectDefaultState.values}
-
             />
 
             <CustomSelect

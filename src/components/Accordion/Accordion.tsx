@@ -1,4 +1,6 @@
-import React, {useState} from "react";
+import React from "react";
+import {AccordionTitle} from "./AccordionTitle";
+import {AccordionBody} from "./AccordionBody";
 
 
 type AccordionPropsType = {
@@ -42,31 +44,5 @@ export const Accordion = (props: AccordionPropsType) => {
 // // }
 
 
-export type AccordionTitlePropsType = {
-    title: string
-    callback: () => void
-}
-
-export function AccordionTitle(props: AccordionTitlePropsType) {
-
-    const callbackHandler = () => {
-        props.callback()
-    }
-
-    return (
-        <h3 onClick={callbackHandler}>{props.title}</h3>
-    )
-}
 
 
-export function AccordionBody() {
-    return (
-        <ul>
-            <li className={'list1'}>1</li>
-            <li>2</li>
-            <li>3</li>
-        </ul>
-    )
-}
-
-export default Accordion;

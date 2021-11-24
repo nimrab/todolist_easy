@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9991d850-0650-4346-8d2a-b8db2f9860f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Select/CustomSelect.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Accordion/AccordionBody.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Accordion/AccordionTitle.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Select/CustomSelect.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Select/CustomSelect.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Accordion/Accordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Accordion/Accordion.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Accordion/NewControlledAccordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Accordion/NewControlledAccordion.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Accordion/UncontrolledAccordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Accordion/UncontrolledAccordion.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Rating/Rating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rating/Rating.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Rating/Star.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rating/Star.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Rating/UncontrolledRating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rating/UncontrolledRating.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="CSS File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -35,7 +41,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../todolist47" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -65,7 +71,9 @@
       <workItem from="1636912822278" duration="907000" />
       <workItem from="1636992556252" duration="6320000" />
       <workItem from="1637074747648" duration="6386000" />
-      <workItem from="1637164012113" duration="4846000" />
+      <workItem from="1637164012113" duration="5041000" />
+      <workItem from="1637250709098" duration="34000" />
+      <workItem from="1637767494448" duration="4548000" />
     </task>
     <servers />
   </component>
@@ -83,5 +91,17 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/App.tsx</url>
+          <line>19</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,5 +1,7 @@
 import React from "react";
-import {AccordionBody, AccordionTitle} from "./Accordion";
+import {AccordionTitle} from "./AccordionTitle";
+import {AccordionBody} from "./AccordionBody";
+
 
 
 export type NewControlledAccordionProps = {
