@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9991d850-0650-4346-8d2a-b8db2f9860f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Accordion/AccordionBody.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Accordion/AccordionTitle.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Clock/Clock.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Accordion/Accordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Accordion/Accordion.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Accordion/NewControlledAccordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Accordion/NewControlledAccordion.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Accordion/UncontrolledAccordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Accordion/UncontrolledAccordion.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Rating/Rating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rating/Rating.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Rating/Star.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rating/Star.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Rating/UncontrolledRating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rating/UncontrolledRating.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +41,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="ts.external.directory.path" value="C:\samurai\todolist_easy\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="F:\samurai\todolist_easy\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -73,7 +66,9 @@
       <workItem from="1637074747648" duration="6386000" />
       <workItem from="1637164012113" duration="5041000" />
       <workItem from="1637250709098" duration="34000" />
-      <workItem from="1637767494448" duration="4548000" />
+      <workItem from="1637767494448" duration="4649000" />
+      <workItem from="1637954023270" duration="89000" />
+      <workItem from="1640626790346" duration="792000" />
     </task>
     <servers />
   </component>
@@ -97,8 +92,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/App.tsx</url>
-          <line>19</line>
-          <properties lambdaOrdinal="-1" />
+          <line>20</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

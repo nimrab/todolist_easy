@@ -9,6 +9,7 @@ import {NewControlledAccordion} from "./components/Accordion/NewControlledAccord
 import {SelectAutoWidth} from "./components/Select/SelectAutoWidth";
 import {SelectChangeEvent} from "@mui/material/Select";
 import {CustomSelect} from "./components/Select/CustomSelect";
+import {Clock} from "./components/Clock/Clock";
 
 
 export type selectStateType = {
@@ -96,6 +97,8 @@ function App() {
                 chosenValue={customSelect.chosenValue}
 
             />
+
+            <Clock/>
 
         </>
     )
