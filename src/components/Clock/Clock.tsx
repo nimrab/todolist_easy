@@ -1,30 +1,27 @@
 import React, {useEffect, useState} from 'react';
 
 
+const addZero = (num: number) => num < 10 ? '0' + num : num
+
 
 export const Clock = () => {
 
-    const [counter, setCounter] = useState<string>('0')
+    const [date, setDate] = useState(new Date())
 
 
 
     useEffect(() => {
 
-        setInterval(() => {
-
-            const date = new Date()
-            const hours = date.getHours()
-            const minutes = date.getMinutes()
-            const seconds = date.getSeconds()
-
-            setCounter(() => `${hours}:${minutes}:${seconds}`)
-            //setCounter(counter)
-            console.log(counter + 'rendered')
+        const intervalId = setInterval(() => {
+            setDate(new Date())
         }, 1000)
 
+            //если мы удалим компоненту --> setInterval продолжит работать --> утечка памяти
+            //убиваем setInterval перед удалением компоненты (переход на другую страницу)
 
-
-
+            return () => {
+            clearInterval(intervalId)
+            }
     },[])
 
     return (
@@ -34,7 +31,7 @@ export const Clock = () => {
             <div>
 
                 <h3>TIME IS:</h3>
-                <h2>{counter}</h2>
+                <h2>{addZero(date.getHours())}:{addZero(date.getMinutes())}:{addZero(date.getSeconds())}</h2>
 
             </div>
 
