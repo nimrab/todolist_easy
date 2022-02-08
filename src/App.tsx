@@ -10,6 +10,7 @@ import {SelectAutoWidth} from "./components/Select/SelectAutoWidth";
 import {SelectChangeEvent} from "@mui/material/Select";
 import {CustomSelect} from "./components/Select/CustomSelect";
 import {Clock} from "./components/Clock/Clock";
+import {ClockAnalog} from "./components/ClockAnalog/ClockAnalog";
 
 
 export type selectStateType = {
@@ -99,6 +100,7 @@ function App() {
             />
 
             <Clock/>
+            <ClockAnalog/>
 
         </>
     )

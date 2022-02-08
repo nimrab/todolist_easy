@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9991d850-0650-4346-8d2a-b8db2f9860f1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/ClockAnalog/ClockAnalog.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ClockAnalog/ClockAnalog.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Clock/Clock.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Clock/Clock.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="TypeScript JSX File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -46,6 +47,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\samurai\todolist_easy\src\components\ClockAnalog" />
+      <recent name="F:\samurai\todolist_easy\src\components" />
       <recent name="C:\samurai\todolist_easy\src\components" />
     </key>
   </component>
@@ -68,7 +71,9 @@
       <workItem from="1637250709098" duration="34000" />
       <workItem from="1637767494448" duration="4649000" />
       <workItem from="1637954023270" duration="89000" />
-      <workItem from="1640626790346" duration="3665000" />
+      <workItem from="1640626790346" duration="4506000" />
+      <workItem from="1640793634091" duration="8000" />
+      <workItem from="1644344176335" duration="3662000" />
     </task>
     <servers />
   </component>
@@ -92,7 +97,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/App.tsx</url>
-          <line>20</line>
+          <line>21</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
